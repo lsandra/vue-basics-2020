@@ -27,11 +27,11 @@ export default {
     fetchData: async function() {
       try {
         const result = await fetch(
-          `https://pokeapi.co/api/v2/pokemon?limit=${this.id}&offset=${this.offset}`
+          `https://api.jikan.moe/v3/search/anime?limit=${this.id}&offset=${this.offset}`
         );
         const data = await result.json();
         console.log(data);
-        this.pokemons = data.results;
+        this.anime = data.results;
       } catch (error) {
         alert(error);
       }
