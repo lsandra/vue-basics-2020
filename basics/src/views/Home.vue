@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <PkmnList :id="20" :offset="0" />
+    <anime:id="20" :offset="0" />
   </div>
 </template>
 
